@@ -1,0 +1,50 @@
+# Model hyperparameters
+inference_mode        : False
+learning_rate         : 0.00003
+num_epochs            : 10
+seed                  : 42
+ckpt_save_freq        : 10
+
+# Dataset parameters
+dataset:
+  path: ./dataset/data
+  num_classes   : 3
+  classes       : {'c':0,'e':1,'n':2}
+
+Tokenizer:
+  Max_lenght    : 150
+  tokenizer_map : True
+
+
+# Model architecture
+model:
+  #{'bert-base-multilingual-cased','bert-base-parsbert-uncased',}
+  name        : 'bert-base-parsbert-uncased'
+  #{'bert-base-multilingual-cased','HooshvareLab/bert-base-parsbert-uncased'}
+  pretrained  : 'HooshvareLab/bert-base-parsbert-uncased'
+  num_classes : 3
+
+  # """
+  # fot chaniging the bert output please change the Act and in case of the hidden_states 
+  # please select the hidden_states_layer_number too.
+  # """
+  output_hidden_states      : True
+  output_attentions         : True
+  #{'pooler_output','last_hidden_state','hidden_states'}
+  Act                       : 'last_hidden_state'
+  hidden_states_layer_number: -2
+
+
+
+# Optimization parameters
+optimizer :
+  name: AdamW
+  weight_decay    : 0.0001
+  momentum        : 0.90
+
+# Scheduler parameters
+scheduler:
+  name        : LinearLR
+  start_factor: 1
+  end_factor  : 0.5
+  total_iters : 20
