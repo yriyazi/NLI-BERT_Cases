@@ -83,4 +83,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 Feel free to contribute to this repository by opening issues or creating pull requests. Happy classifying!
 
-For any questions or inquiries, please contact [Your Name](mailto:your.email@example.com).
+For any questions or inquiries, please contact [Your Name](mailto:iyasiniyasin98@gmail.com).
