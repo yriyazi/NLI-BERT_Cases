@@ -1,5 +1,9 @@
 # NLI-BERT_Cases
 
+![Image Description](Outputs/attention/mBERT%20last%20attentio%20layer%20head_7%20row_5.png)
+
+![Image Description](Outputs/attention/some%20attention%20head%20output%202.png)
+
 ## Natural Language Inference Classification with Hugging Face BERT
 
 This repository contains a Natural Language Inference (NLI) classification model that leverages the power of the Hugging Face BERT model. The model is trained on the [FarsTail dataset](https://github.com/dml-qom/FarsTail) for Persian language.
